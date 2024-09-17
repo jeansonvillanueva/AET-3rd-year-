@@ -1,0 +1,98 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>  
+    <ion-title>Tulfo in Action</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="container">
+  <ion-button id="open-action-sheet-1">
+    <ion-card-header>
+      <ion-card-subtitle>
+        Ben Tulfo
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-avatar>
+        <img src="assets/icon/img/ben-tulfo.jpg" alt="Ben Tulfo">
+      </ion-avatar>
+    </ion-card-content>
+    <ion-action-sheet 
+      trigger="open-action-sheet-1" 
+      class="my-custom-class"
+      header="Bitag" 
+      subHeader="Ben Tulfo"
+      [buttons]="actionSheetButtonsBen">
+    </ion-action-sheet>
+  </ion-button>  
+
+  <ion-button id="open-action-sheet-2">
+    <ion-card-header>
+      <ion-card-subtitle>
+        Erwin Tulfo
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-avatar>
+        <img src="assets/icon/img/erwin-tulfo.jpg" alt="Erwin Tulfo">
+      </ion-avatar>
+    </ion-card-content>
+    <ion-action-sheet 
+      trigger="open-action-sheet-2" 
+      class="my-custom-class"
+      header="Tutok" 
+      subHeader="Erwin Tulfo"
+      [buttons]="actionSheetButtonsErwin">
+    </ion-action-sheet>
+  </ion-button>
+
+  <ion-button id="open-action-sheet-3">
+    <ion-card-header>
+      <ion-card-subtitle>
+        Raffy Tulfo
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-avatar>
+        <img src="assets/icon/img/raffy-tulfo.jpg" alt="Raffy Tulfo">
+      </ion-avatar>
+    </ion-card-content>
+    <ion-action-sheet 
+      trigger="open-action-sheet-3"
+      class="my-custom-class"
+      header="Action" 
+      subHeader="Raffy Tulfo"
+      [buttons]="actionSheetButtonsRaffy">
+    </ion-action-sheet>
+  </ion-button>
+
+  <ion-button id="open-action-sheet-4">
+    <ion-card-header>
+      <ion-card-subtitle>
+        Ramon Tulfo
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-avatar>
+        <img src="assets/icon/img/ramon-tulfo.jpg" alt="Ramon Tulfo">
+      </ion-avatar>
+    </ion-card-content>
+    <ion-action-sheet 
+      trigger="open-action-sheet-4" 
+      class="my-custom-class"
+      header="Isumbong" 
+      subHeader="Ramon Tulfo"
+      [buttons]="actionSheetButtonsRamon">
+    </ion-action-sheet>
+  </ion-button>
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" style="margin-bottom: 50px;">
+    <ion-fab-button color="primary">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
